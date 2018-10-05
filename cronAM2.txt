@@ -1,0 +1,23 @@
+Following the Cron lesson lets put what you created into practice:
+
+Create a new api route named practice "/api/practice"
+
+this route should have the following routes:
+GET '/' some sort of simple json to show this api endpoint exists.
+GET '/start/:num' this should start the barkWorker
+GET '/stop' this should stop the barkWorker
+Post '/sort' this should accept an array of names. 
+
+It should send it sortWorker who will then output a sorted version of the array to the console. 
+The route should inform the user that the action was started.
+
+create two workers:
+barkWorker.js - this should have a function that creates the barkWorker with the num being used as the second iterator. 
+IE if the route is /start/5 the barkWorker should "bark" to the console every 5 seconds /start/10 then bark every 10 seconds.
+
+The trick here is the scope of the bark worker. 
+Give it a variable similar to adderWorker but also need to be able to stop it from a different route and not a one time function.
+
+sortWorker.js - this is a one time worker that accepts an array of names and then sorts them. 
+
+Creating your own sorting system earns bonus points rather then using a built in sorting method.
