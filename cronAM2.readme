@@ -21,3 +21,8 @@ Give it a variable similar to adderWorker but also need to be able to stop it fr
 sortWorker.js - this is a one time worker that accepts an array of names and then sorts them. 
 
 Creating your own sorting system earns bonus points rather then using a built in sorting method.
+
+
+Extra Credit - Asynchronous Cron
+
+Figure out a way to have the server run the adder/1000000000 process without locking up the site. 
